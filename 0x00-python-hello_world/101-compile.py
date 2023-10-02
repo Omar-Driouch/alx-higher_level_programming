@@ -1,3 +1,2 @@
-#!/usr/bin/python3
-py_compile "$PYFILE"
-export PYFILE = my_main.py
+#!/bin/bash
+python3 -m compileall -b "$PYFILE"
