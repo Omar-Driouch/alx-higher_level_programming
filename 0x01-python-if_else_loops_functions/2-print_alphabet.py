@@ -1,3 +1,2 @@
 #!/usr/bin/python3
-var = "abcdefghijklmnopqrstuvwxyz"
-print("{:s}".format(var), end="")
+print("".join([chr(char + ord("a")) for char in range(26)]), end="")
