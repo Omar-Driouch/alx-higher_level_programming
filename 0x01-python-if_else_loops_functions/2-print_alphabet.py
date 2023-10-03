@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-print("abcdefghijklmnopqrstuvwxyz")
+var = "abcdefghijklmnopqrstuvwxyz"
+print("{:s}".format(var), end="")
