@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-import easy_print_101
+from easy_print_101 import PythonIsCool; PythonIsCool("#pythoniscool")
