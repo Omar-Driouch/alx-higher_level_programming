@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
+    if not roman_string or not isinstance(roman_string, str):
+        return 0
+
     roman_dict = {
         'I': 1,
         'V': 5,
@@ -14,7 +17,9 @@ def roman_to_int(roman_string):
     prev_value = 0
 
     for numeral in reversed(roman_string):
-        value = roman_dict[numeral]
+        value = roman_dict.get(numeral, 0)
+        if value == 0:
+            return 0
         if value < prev_value:
             decimal -= value
         else:
