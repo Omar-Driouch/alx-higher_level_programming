@@ -1,6 +1,11 @@
 #!/usr/bin/python3
+
 def search_replace(my_list, search, replace):
-    new_list = list(my_list)
-    if 1 <= search <= len(my_list):
-        new_list[search - 1] = replace
+    new_list = []
+    for item in my_list:
+        if item == search:
+            new_list.append(replace)
+        else:
+            new_list.append(item)
     return new_list
+
