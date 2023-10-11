@@ -8,9 +8,8 @@ def weight_average(my_list=[]):
     for tuple in my_list:
         for elemnt in tuple:
             res *= elemnt
-            div = div + tuple[1]
+        div = div + tuple[1]
         av += res
         res = 1
-    div /= 2
 
     return av / div
