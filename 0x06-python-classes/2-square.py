@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 """This is a definition of a class named Square."""
 
+
 class Square:
     """This class represents a square."""
-    def __init__(self, size = 0):
+
+    def __init__(self, size=0):
         """Constructor for the Square class.
 
         Args:
