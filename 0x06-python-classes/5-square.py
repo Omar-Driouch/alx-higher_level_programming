@@ -39,8 +39,6 @@ class Square:
         """Print the area of the square. with # """
         if self.__size == 0:
             print()
-        for i in range(self.__size):
-            print()
-            for s in range(self.__size):
-                print("#", end = "")
-        print()   
+        else:
+            for i in range(self.__size):
+                print("#" * self.__size)  
