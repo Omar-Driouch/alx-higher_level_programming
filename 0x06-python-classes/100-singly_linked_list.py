@@ -38,6 +38,8 @@ class Node:
 
 
 """This is a definition of a class named SinglyLinkedList."""
+
+
 class SinglyLinkedList:
     def __init__(self):
         """Constructor for the SinglyLinkedList class."""
