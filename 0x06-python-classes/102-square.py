@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+"""This is a definition of a class named Square."""
+
+
 class Square:
     """This class represents a square."""
 
