@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 class Node:
     """This is a definition of a class named Node."""
     
@@ -64,3 +62,4 @@ class SinglyLinkedList:
             result += str(current.data) + "\n"
             current = current.next_node
         return result
+
