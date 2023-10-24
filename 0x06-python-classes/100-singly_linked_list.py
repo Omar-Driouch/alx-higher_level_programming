@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""This is a definition of a class named Node."""
-
 
 class Node:
+    """This is a definition of a class named Node."""
+    
     def __init__(self, data, next_node=None):
         """Constructor for the Node class."""
         if not isinstance(data, int):
@@ -36,11 +36,9 @@ class Node:
             raise TypeError("next_node must be a Node object")
         self.__next_node = value
 
-
-"""This is a definition of a class named SinglyLinkedList."""
-
-
 class SinglyLinkedList:
+    """This is a definition of a class named SinglyLinkedList."""
+
     def __init__(self):
         """Constructor for the SinglyLinkedList class."""
         self.head = None
