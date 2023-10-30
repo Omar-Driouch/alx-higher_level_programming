@@ -1,9 +1,7 @@
 #!/usr/bin/python3
-class Rectangle():
-    """
-    This class defines a rectangle.
+"""Defines a Rectangle class."""
 
-    Attributes:
-        num_rectangles (int): Keeps track of the number of rectangle objects created.
-    """
+
+class Rectangle:
+    """Represent a rectangle."""
     pass
