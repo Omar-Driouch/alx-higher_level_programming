@@ -10,3 +10,4 @@ The class that inherits from another class is called the child class.
 
 Here is a simple example of Python inheritance:
 python3 -m doctest -v ./tests/0-add_integer.txt
+python3 -m unittest  ./tests/2-main.py 
