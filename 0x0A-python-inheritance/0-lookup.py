@@ -2,7 +2,6 @@
 """Defines an object attribute lookup function."""
 
 
-
 def lookup(obj):
     """
     Function that returns the list of attributes and methods of an object.
