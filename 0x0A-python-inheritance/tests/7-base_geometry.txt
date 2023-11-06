@@ -1,0 +1,61 @@
+# Test for 7-base_geometry.py
+# -------------------------------------------
+
+# case 0: import
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>>
+
+# -------------------------------------------
+
+# case 1: area method
+
+>>> bg = BaseGeometry()
+>>> bg.area()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+Exception: area() is not implemented
+>>>
+
+# -------------------------------------------
+
+# case 2: integer_validator method with integer
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("test", 10)
+# No output expected as 10 is a valid integer
+>>>
+
+# -------------------------------------------
+
+# case 3: integer_validator method with non-integer
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("test", "not an integer")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: test must be an integer
+>>>
+
+# -------------------------------------------
+
+# case 4: integer_validator method with zero
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("test", 0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: test must be greater than 0
+>>>
+
+# -------------------------------------------
+
+# case 5: integer_validator method with negative integer
+
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("test", -1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: test must be greater than 0
+>>>
+
+# -------------------------------------------
