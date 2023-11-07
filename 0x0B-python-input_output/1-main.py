@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-write_file = __import__('1-write_file').write_file
+append_write = __import__('2-append_write').append_write
 
-nb_characters = write_file("my_file_0.txt", "This School is so cool!\n")
-print(nb_characters)
+nb_characters_added = append_write("file_append.txt", "This School is so cool!\n")
+print(nb_characters_added)
+
