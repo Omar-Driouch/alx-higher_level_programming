@@ -1,26 +1,13 @@
 #!/usr/bin/python3
-save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
+Student = __import__('10-student').Student
 
-filename = "my_list.json"
-my_list = [1, 2, 3]
-save_to_json_file(my_list, filename)
+student_1 = Student("John", "Doe", 23)
+student_2 = Student("Bob", "Dylan", 27)
 
-filename = "my_dict.json"
-my_dict = { 
-    'id': 12,
-    'name': "John",
-    'places': [ "San Francisco", "Tokyo" ],
-    'is_active': True,
-    'info': {
-        'age': 36,
-        'average': 3.14
-    }
-}
-save_to_json_file(my_dict, filename)
+j_student_1 = student_1.to_json()
+j_student_2 = student_2.to_json(['first_name', 'age'])
+j_student_3 = student_2.to_json(['middle_name', 'age'])
 
-try:
-    filename = "my_set.json"
-    my_set = { 132, 3 }
-    save_to_json_file(my_set, filename)
-except Exception as e:
-    print("[{}] {}".format(e.__class__.__name__, e))
+print(j_student_1)
+print(j_student_2)
+print(j_student_3)
