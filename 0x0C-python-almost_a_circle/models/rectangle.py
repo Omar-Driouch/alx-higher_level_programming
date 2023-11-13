@@ -2,6 +2,7 @@
 """Defines a rectangle class."""
 from models.base import Base
 
+
 class Rectangle(Base):
     """Defines a rectangle class."""
     def __init__(self, width, height, x=0, y=0, id=None):
@@ -84,3 +85,8 @@ class Rectangle(Base):
     def area(self):
         """Calculate the area of the rectangle."""
         return self.__width * self.__height
+
+    def display(self):
+        """Display the rectangle."""
+        for _ in range(self.__height):
+            print("#" * self.__width)
