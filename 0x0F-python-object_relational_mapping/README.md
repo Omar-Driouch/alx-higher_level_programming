@@ -78,57 +78,43 @@ $ python3
   
 ## Usage
 + Clone the project to your local machine
-
-```
-git clone https://github.com/alamy2711/binary_trees.git
-
-```
+ 
 
 
 + Run this command to compile the project
  
 ```
-gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 1-main.c 1-binary_tree_insert_left.c 0-binary_tree_node.c -o Output
+cat 0-select_states.sql
+-- Create states table in hbtn_0e_0_usa with some data
+CREATE DATABASE IF NOT EXISTS hbtn_0e_0_usa;
+USE hbtn_0e_0_usa;
+CREATE TABLE IF NOT EXISTS states ( 
+    id INT NOT NULL AUTO_INCREMENT, 
+    name VARCHAR(256) NOT NULL,
+    PRIMARY KEY (id)
+);
+INSERT INTO states (name) VALUES ("California"), ("Arizona"), ("Texas"), ("New York"), ("Nevada");
+```
+then 
+```
+cat 0-select_states.sql | mysql -uroot -p
 ```
 
-## Project Data structures
+then 
 ```
-/**
- * struct binary_tree_s - Binary tree node
- *
- * @n: Integer stored in the node
- * @parent: Pointer to the parent node
- * @left: Pointer to the left child node
- * @right: Pointer to the right child node
- */
-struct binary_tree_s
-{
-    int n;
-    struct binary_tree_s *parent;
-    struct binary_tree_s *left;
-    struct binary_tree_s *right;
-};
+./0-select_states.py root root hbtn_0e_0_usa
+```
+## Output
 
-```
+(1, 'California')
+(2, 'Arizona')
+(3, 'Texas')
+(4, 'New York')
+(5, 'Nevada')
 
-**Binary Search Tree**
-```
-typedef struct binary_tree_s bst_t;
-
-```
-**AVL Tree**
-```
-typedef struct binary_tree_s avl_t;
-
-```
-**Max Binary Heap**
-```
-typedef struct binary_tree_s heap_t;
-
-
-```
+ 
+ 
 
 ## Contributors
-+ Mustapha El Alamy - [Github Profile](https://github.com/alamy2711/)
 + Omar Driouch - [LinkedIn Profile](https://www.linkedin.com/in/omar-driouch/)
 
